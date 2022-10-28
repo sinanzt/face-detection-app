@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>sinanzt | Face Detection</title>
+  <link rel="stylesheet" href="/css/custom.css" />
+
+  <script src="/js/jquery.facedetection.min.js"></script>
+  <script src="/js/face-api.js"></script>
+  <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+  <script src="/js/face-expression-recognition.js"></script>
+  <script src="/js/faceDetection.js"></script>
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="app-box">
+      <div class="header">Face Detection App</div>
+      <div class="content">
+        <div id="expression-recognition-page">
+          <div class="sub-header">Face Expression Recognition</div>
+          <div class="sub-content">
+            <div class="input-box">
+              <div class="img-box">
+                <img id="imgViewer" />
+                <canvas id="overlayCanvas"></canvas>
+                <div class="loader"></div>
+              </div>
+              <input id="imgInput" type="file" accept=".jpg, .jpeg, .png">
+            </div>
+          </div>
+          <div class="sub-footer">
+            <button type="button" class="back-button">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
